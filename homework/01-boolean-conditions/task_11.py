@@ -49,3 +49,16 @@
 #     False
 
 # Решение
+
+cash_register_1 = input("Касса 1 открыта (да/нет): ")
+cash_register_2 = input("Касса 2 открыта (да/нет): ")
+cash_register_3 = input("Касса 3 открыта (да/нет): ")
+
+if cash_register_1 == "да" and cash_register_2 == "нет" and cash_register_3 == "нет":
+    print(True)
+elif cash_register_1 == "нет" and cash_register_2 == "да" and cash_register_3 == "нет":
+    print(True)
+elif cash_register_1 == "нет" and cash_register_2 == "нет" and cash_register_3 == "да":
+    print(True)
+else:
+    print(False)

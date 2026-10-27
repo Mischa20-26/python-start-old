@@ -36,6 +36,15 @@
 #     Остаток на складе, шт.: 3
 #     Цена товара, руб.: 1200
 #     Деньги у покупателя, руб.: 1000
-#     False
+#     False  
 
 # Решение
+
+number = int(input("Остаток на складе: "))
+price = int(input("Цена товара: "))
+money = int(input("Деньги у покупателя: "))
+
+if price < money and number != 0:
+    print(True)
+else:
+    print(False)

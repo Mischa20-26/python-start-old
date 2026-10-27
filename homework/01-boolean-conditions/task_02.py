@@ -30,3 +30,12 @@
 #     Полный билет: False
 
 # Решение
+
+ticket = int(input("Возраст: "))
+if ticket < 18 or ticket > 65:
+    print(f"Льготный билет: {True}")
+    print(f"Полный билет: {False}")
+else:
+    print(f"Льготный билет: {False}")
+    print(f"Полный билет: {True}")
+  

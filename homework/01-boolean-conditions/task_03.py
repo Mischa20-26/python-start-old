@@ -50,3 +50,13 @@
 #     Можно на аттракцион: False
 
 # Решение
+
+height = int(input("Рост, см: "))
+age = int(input("Возраст, лет: "))
+escort = input("В сопровождении? (да/нет): ")
+
+
+if height >= 120 and (age >= 10 or escort == "да"):
+    print(f"Можно на аттракцион: {True}")
+else:
+    print(f"Можно на аттракцион: {False}")

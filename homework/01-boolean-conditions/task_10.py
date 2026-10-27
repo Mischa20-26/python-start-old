@@ -49,3 +49,27 @@
 #     Допущен: False
 
 # Решение
+
+exist = int(input("Посещаемость, %: "))
+exam_tick = int(input("Сдано лабораторных: "))
+pay = int(input("Долг по оплате, руб.: "))
+
+if exist >= 75:
+    print(f"Посещаемость: {True}")
+else:
+    print(f"Посещаемость: {False}")
+
+if exam_tick >= 8:
+    print(f"Сдано лабораторных: {True}")
+else:
+    print(f"Сдано лабораторных: {False}")
+
+if pay > 0:
+    print(f"Нет долга: {False}")
+elif pay == 0:
+    print(f"Нет долга: {True}")
+
+if exist >= 75 and exam_tick >= 8 and pay == 0:
+    print(f"Допущен: {True}")
+else:
+    print(f"Допущен: {False}")

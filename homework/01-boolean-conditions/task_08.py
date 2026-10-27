@@ -33,3 +33,12 @@
 #     False
 
 # Решение
+
+import calendar
+
+year = int(input("Введите год: "))
+
+if calendar.isleap(year):
+    print(f"{year} год — високосный. {True}")
+else:
+    print(f"{year} год — не високосный. {False}")

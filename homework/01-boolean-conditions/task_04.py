@@ -44,3 +44,18 @@
 #     Позвонить покупателю: False
 
 # Решение
+
+money = input("Заказ оплачен (да/нет): ")
+exist = input("Товар есть (да/нет): ")
+address = input("Адрес указан (да/нет): ")
+
+if money == "да" and exist == "да" and address == "да":
+    print(f"Можно отправлять: {True}")
+else:
+    print(f"Можно отправлять: {False}")
+
+
+if money == "да" and address == "нет":
+    print(f"Позвонить покупателю: {True}")
+else:
+    print(f"Позвонить покуптелю: {False}")

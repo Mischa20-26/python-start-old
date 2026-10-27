@@ -40,7 +40,11 @@
 #     True
 
 # Решение: исправьте программу ниже
+
 a = int(input("Остаток на счёте 1: "))
 b = int(input("Остаток на счёте 2: "))
 c = int(input("Остаток на счёте 3: "))
-print(a or b or c < 0)
+if a < 0 and b >= 0 and c >= 0 or (a >= 0 and b < 0 and c >= 0) or (a >= 0 and b >= 0 and c < 0):
+    print(True)
+else:
+    print(False)

@@ -43,3 +43,18 @@
 #     Кешбэк: 0.00 руб.
 
 # Решение
+
+category = input("Категория: ")
+summe = float(input("Сумма покупки, руб.: "))
+
+if category == "азс":
+    arif_oper = summe / 100 * 5
+    print(f"Кэшбэк: {arif_oper:.2f} руб.")
+elif category == "аптека":
+    arif_oper_1 = summe / 100 * 3 
+    print(f"Кэшбэк: {arif_oper_1:.2f} руб.")
+elif category == "супермаркет":
+    arif_oper_2 = summe / 100 
+    print(f"Кэшбэк: {arif_oper_2:.2f} руб.")
+else:
+    print(f"Кэшбэк: 0.00 руб.")

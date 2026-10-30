@@ -51,3 +51,16 @@
 #     Опоздание на 3 ч
 
 # Решение
+
+interval_start = int(input("Начало интервала, ч: "))
+interval_stop = int(input("Конец интервала, ч: "))
+interval = int(input("Курьер приехал, ч: "))
+
+remain = interval - interval_stop 
+
+if interval >= interval_start and interval <= interval_stop:
+    print("Вовремя")
+elif interval <= interval_start and interval <= interval_stop:
+    print("Раньше интервала")
+elif interval >= interval_start and interval >= interval_stop:
+    print(f"Опоздание на {remain} ч")

@@ -28,3 +28,9 @@
 #     Проверьте холодильник
 
 # Решение
+
+temperature = int(input("Температура: "))
+if temperature < 2 or temperature > 6:
+    print("Проверьте холодильник")
+else:
+    print("Температура в норме")

@@ -51,3 +51,19 @@
 #     Штраф: 5000 руб.
 
 # Решение
+
+need_speed = int(input("Разрешённая скорость, км/ч: "))
+fact_speed = int(input("Фактическая скорость, км/ч: "))
+
+remain_speed = fact_speed - need_speed 
+
+if remain_speed >= 0 and remain_speed <= 20:
+    print("Штраф: 0 руб.")
+elif remain_speed >= 21 and remain_speed <= 40:
+    print("Штраф: 750 руб.")
+elif remain_speed >= 41 and remain_speed <= 60:
+    print("Штраф: 1500 руб.")
+elif remain_speed >= 61 and remain_speed <= 80:
+    print("Штраф: 2500 руб.")
+else:
+    print("Штраф: 5000 руб.")

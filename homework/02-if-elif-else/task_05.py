@@ -34,3 +34,14 @@
 #     Батарея заряжена
 
 # Решение
+
+phone = int(input("Заряд, %: "))
+
+if phone >= 0 and phone <= 15:
+    print("Критический заряд")
+elif phone >= 16 and phone <= 50:
+    print("Низкий заряд")
+elif phone >= 51 and phone <= 99:
+    print("Нормальный заряд")
+elif phone == 100:
+    print("Батарея заряжена")

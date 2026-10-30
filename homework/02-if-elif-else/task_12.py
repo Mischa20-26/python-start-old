@@ -43,3 +43,19 @@
 #     К оплате: 170 руб.
 
 # Решение
+
+has_subscription = input("Есть подписка? (да/нет): ").strip().lower()
+duration = int(input("Длительность поездки в минутах: "))
+
+
+if has_subscription == "да":
+    if duration <= 30:
+        print("Поездка входит в подписку")
+    else:
+       
+        cost = (duration - 30) * 5
+        print(f"К оплате: {cost} руб.")
+else:
+    
+    cost = 50 + duration * 8
+    print(f"К оплате: {cost} руб.")

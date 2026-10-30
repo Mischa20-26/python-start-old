@@ -60,3 +60,22 @@
 #     Ошибка ввода
 
 # Решение
+
+time = input("Сдана в срок (да/нет): ")
+point = int(input("Баллы: "))
+
+if time == "да" and point < 5:
+    print("Работа не зачтена")
+elif time == "да" and (point >= 5 and point <= 6):
+    print("Оценка: 3")
+elif time == "да" and (point >= 7 and point <= 8):
+    print("Оценка: 4")
+elif time == "да" and (point >= 9 and point <= 10):
+    print("Оценка: 5")
+elif time == "нет" and (point < 5):
+    print("Работа не зачтена")
+elif time == "нет" and (point >= 5 and point <= 10):
+    print("Оценка: 3")
+elif point < 0 or point > 10:
+    print("Ошибка ввода")
+

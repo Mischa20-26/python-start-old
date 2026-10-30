@@ -47,3 +47,15 @@
 #     Отпуск согласован
 
 # Решение
+
+month = int(input("Отработано месяцев: "))
+day_able = int(input("Дней отпуска: "))
+day = int(input("Доступно дней: "))
+remain = day_able - day
+if month < 6:
+    print("Отпуск недоступен")
+elif month >= 6 and day_able == day:
+    print("Отпуск согласован")
+else:
+    print(print(f"Не хватает дней: {remain}"))
+

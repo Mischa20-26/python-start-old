@@ -43,3 +43,11 @@
 #     Оставьте заявку, ответим в рабочее время
 
 # Решение
+
+day_of_week = int(input("День недели (1-7): "))
+hour = int(input("Час (0-23): "))
+
+if day_of_week <= 5 and (hour >= 9 and hour < 18) or (day_of_week == 6 and (hour >= 10 and hour < 15)):
+    print("Оператор на связи")
+else:
+    print("Оставьте заявку, ответим в рабочее время")

@@ -34,3 +34,12 @@
 #     Снизьте давление
 
 # Решение
+
+pressing = float(input("Давление, бар: "))
+
+if pressing >= 2.2 and pressing <= 2.5:
+    print("Давление в норме")
+elif pressing < 2.2:
+    print("Подкачайте шины")
+elif pressing > 2.5:
+    print("Снизьте давление")

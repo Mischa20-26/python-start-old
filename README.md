@@ -49,3 +49,4 @@ python homework/00-example/task_01.py      # macOS: python3
 - [Конспекты пройденных глав](lectures/README.md)
 - [Как сдавать работы](docs/SUBMIT.md) и [как приходят новые материалы](docs/UPDATES.md)
 - [Пошаговая инструкция по работе с репозиторием](https://algorthimization-course-vvodnoe.vercel.app/dup02-vvedenie-v-python/repozitoriy/index.html)
+- 

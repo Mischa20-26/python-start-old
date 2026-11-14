@@ -40,11 +40,13 @@
 #     Количество: 3
 
 # Решение: исправьте программу ниже
+
 total = 0
 count = 0
-number = int(input("Число (0 — конец): "))
-while number != 0
+number = 1
+while number != 0:
+    number = int(input("Число (0 — конец): "))
     total += number
-    count =+ 1
+    count += 1
 print("Сумма:", total)
-print("Количество:", count)
+print("Количество:", count-1)

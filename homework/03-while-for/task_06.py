@@ -46,3 +46,16 @@
 #     Средний балл: 4.50
 
 # Решение
+
+grades = None
+summe = 0
+count = 0 
+
+while grades != 0:
+ grades = int(input("Оценка (0 - конец): "))
+ summe += grades 
+ count += 1
+
+medium_arifmetic = summe/(count-1) 
+
+print(f"Средний балл: {medium_arifmetic:.2f}")

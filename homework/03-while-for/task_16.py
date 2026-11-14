@@ -34,3 +34,14 @@
 #     Не совершенное
 
 # Решение
+
+n = int(input("Натуральное число: "))
+container = 0
+
+for i in range(1, n):
+    if n % i == 0:
+       container += i 
+if container == n:
+    print("Совершенное")
+else:
+    print("Не совершенное")

@@ -27,3 +27,15 @@
 #     Цифр: 7
 
 # Решение
+
+natural_number = int(input("Введите натуральное число: "))
+saver_number = natural_number
+
+count = 0
+
+while natural_number != 0:
+  natural_number = natural_number // 10
+  count += 1 
+
+print(f"Натуральное число: {saver_number}")
+print(f"Цифр: {count}")

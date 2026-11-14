@@ -28,3 +28,12 @@
 #     Слов: 0
 
 # Решение
+
+text = input("Фраза: ")
+
+if len(text) == 0:
+    words_count = 0
+else:
+    words_count = text.count(' ') + 1
+
+print(f"Слов: {words_count}")

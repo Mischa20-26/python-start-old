@@ -27,3 +27,15 @@
 #     Дороже порога: 6
 
 # Решение
+
+price_list = [120, 80, 450, 45, 990, 300]
+
+limit_price = int(input("Порог цены, руб: "))
+
+quantity_of_prices = 0
+
+for i in price_list:
+    if i > limit_price:
+     quantity_of_prices += 1
+
+print("Дороже порога:", quantity_of_prices)
